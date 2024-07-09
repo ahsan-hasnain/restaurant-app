@@ -1,38 +1,248 @@
-.App {
-  text-align: center;
-}
+:root{
+  --primary: #DCCA87;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body{
+  background-color: black;
+  font-family: 'YourFont', sans-serif;
   color: white;
 }
+.dark-bg{
+  background-color: rgb(17, 16, 16);
+}
+.grey{
+  color: #AAAAAA;
 
-.App-link {
-  color: #61dafb;
+}
+.rounded-20{
+  border-radius: 20px;
+}
+input{
+  background: transparent;
+  border-radius: 8px;
+  padding: 8px;
+  border: 2px solid var(--primary);
+}
+input:focus{
+  background: transparent;
+  border: 2px solid var(--primary);
 }
 
-@keyframes App-logo-spin {
+.p-color{
+  color: var(--primary) !important;
+}
+@font-face {
+  font-family: 'YourFont';
+  src: url('./assets/fonts/Coves.otf') format('truetype');
+  /* Add additional formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'YourFont2';
+  src: url('./assets/fonts/Coves\ Bold.otf') format('truetype');
+  /* Add additional formats if available */
+  font-weight: normal;
+  font-style: normal;
+}
+.bold{
+  font-family: 'YourFont2', sans-serif;
+}
+.simple-text{
+  text-decoration: none;
+  color: whitesmoke;
+}
+.primary-button{
+  background: var(--primary);
+  color: black;
+  border: none;
+  border: 2px solid var(--primary);
+  transition:  0.3s ease-in-out;
+}
+.primary-button:hover{
+  color: var(--primary);
+  background-color: transparent;
+  border: 2px solid var(--primary);
+}
+.primary-button:active{
+  transform: translate(5%);
+}
+
+.link{
+  font-size: 20px;
+  transition: 0.3s;
+}
+.link:hover{
+  color: var(--primary);
+}
+.YourFont-100 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.YourFont-200 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.YourFont-300 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.YourFont-400 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.YourFont-500 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.YourFont-600 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.YourFont-700 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.YourFont-800 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.YourFont-900 {
+  font-family: "YourFont", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.YourFont-thin-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.YourFont-extralight-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.YourFont-light-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.YourFont-regular-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.YourFont-medium-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.YourFont-semibold-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.YourFont-bold-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.YourFont-extrabold-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.YourFont-black-italic {
+  font-family: "YourFont", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+.f8 {
+  font-size: 8px !important;
+}
+.f10 {
+  font-size: 10px !important;
+}
+.f10{
+  font-size:10px !important;
+}
+.f12 {
+  font-size: 12px !important;
+}
+.f14 {
+  font-size: 14px !important;
+}
+.f16 {
+  font-size: 16px !important;
+}
+.f18 {
+  font-size: 18px !important;
+}
+.f24 {
+  font-size: 24px !important;
+}.f26 {
+  font-size: 26px !important;
+}.f28 {
+  font-size: 28px !important;
+}
+.f40 {
+  font-size: 40px !important;
+}
+.f50 {
+  font-size: 50px !important;
+}
+.f60 {
+  font-size: 60px !important;
+}
+.f30 {
+  font-size: e30px !important;
+}
+.f80 {
+  font-size: 80px !important;
+}
+.border22 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid transparent;
+  border-top-color: #3498db;
+  border-radius: 50%;
+  animation: rotate 3s linear infinite;
+}
+/* Keyframes for rotation */
+@keyframes rotate {
   from {
-    transform: rotate(0deg);
+      transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+      transform: rotate(360deg);
   }
 }
