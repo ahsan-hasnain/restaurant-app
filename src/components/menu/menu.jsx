@@ -16,7 +16,7 @@ const items = [
 ] 
 export const MenuPage = () => {
     const [search, setSearch] = React.useState('')
-    const filteredItems = items.filter(item => item.name.toLocaleLowerCase().includes(search))
+    const filteredItems = items.filter(item => item.name.toLocaleLowerCase().includes(search.toLocaleLowerCase()))
   return (
     <div className='container'>
         <div className=' d-flex gap-3 align-items-center my-3'>
