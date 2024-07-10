@@ -33,7 +33,7 @@ export default function PanoramicSlider() {
     document.getElementById("mypic").style.width = "0%";
   }
   return (
-    <>
+    <div className='main'>
       <Swiper
         effect={'coverflow'}
         grabCursor={true}
@@ -63,26 +63,9 @@ export default function PanoramicSlider() {
           <img src={selectedImage} style={{width:'auto', height:'60vh'}} alt={'something'}/>
         </div>
       </div>
-      {/* <ImageModal 
-        show={showModal} 
-        handleClose={handleCloseModal} 
-        imageSrc={selectedImage.src} 
-        imageAlt={selectedImage.alt} 
-      /> */}
-    </>
+    </div>
   );
 }
 
 
 
-
-const ImageModal = ({ show, handleClose, imageSrc, imageAlt }) => {
-  return (
-    <Modal isOpen={show} toggle={handleClose} size="lg" centered >
-      <ModalHeader toggle={handleClose}>{imageAlt}</ModalHeader>
-      <ModalBody>
-        <img src={imageSrc} alt={imageAlt} className="w-100" />
-      </ModalBody>
-    </Modal>
-  );
-};

@@ -15,7 +15,7 @@ export const NavBar = () => {
     <div className='container p-4'>
       <div className='d-flex justify-content-between align-items-center'>
         <div>
-          <img src={logo} alt='logo' className='img-fluid' />
+          <Link to={'/'}><img src={logo} alt='logo' className='img-fluid' /></Link>
         </div>
         <div className='d-none d-lg-block'>
           <div className='d-flex gap-5 '>

@@ -1,8 +1,10 @@
 /* styles.css */
-
+.main{
+  z-index: 3;
+}
 .mySwiper {
     width: 100%;
-    height: 400px;;
+    height: 400px;
     margin: auto;
   }
   
@@ -22,6 +24,7 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+  
   }
   
   .mySwiper .swiper-slide:hover img.pic {
