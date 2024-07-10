@@ -5,10 +5,10 @@ export const Special = () => {
   return (
     <div className='container my-5 '>
         <div className='text-center'>
-    <span className='f80 p-color'>" OUR SPECIALS "</span>
+    <span className='f40 YourText-600  p-color'>" OUR SPECIALS "</span>
         </div>
         <div className='row mt-4'>
-            <div className='col-4'>
+            <div className='col-12 col-md-4'>
                 <div className='d-flex flex-column gap-5'>
                     <span className='f40 YourFont-500 text-center'>Cocktails</span>
                     {cocktails.map(cocktail => (
@@ -27,10 +27,10 @@ export const Special = () => {
 
                 </div>
             </div>
-            <div className='col-4 text-center'>
+            <div className='col-12 col-md-4 text-center'>
                 <img src={image} className='img-fluid '/>
             </div>
-            <div className='col-4'>
+            <div className='col-12 col-md-4'>
             <div className='d-flex flex-column gap-5'>
                     <span className='f40 YourFont-500 text-center'>Sandwiches</span>
                     {sandwiches.map(sandwich => (

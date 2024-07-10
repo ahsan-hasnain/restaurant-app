@@ -3,7 +3,7 @@ import bg from '../../assets/images/BG.png'
 import logo from '../../assets/images/logo.png'
 export const Footer = () => {
   return (
-    <div class="position-relative overflow-hidden w-100 mt-5" >
+    <div class="position-relative overflow-hidden w-100 mt-5 mb-0" >
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50">
 
         <img src={bg} alt="Background" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" />
@@ -11,7 +11,7 @@ export const Footer = () => {
     <div class="position-relative text-white text-center py-5">
         <div className='container '>
             <div className='row'>
-                <div className='col-4'>
+                <div className='col-12 col-md-4 mb-2'>
                     <div className='d-flex flex-column gap-3'>
                         <span className='f24'>Contact Us</span>
                         <span>Block A ABC Road, Lahore</span>
@@ -21,7 +21,7 @@ export const Footer = () => {
                     </div>
 
                 </div>
-                <div className='col-4'>
+                <div className='col-12 col-md-4 mb-2'>
                     <div className='d-flex flex-column gap-3'>
                         <span className='f24'><img src={logo} className='img-fluid'/></span>
                         <span>"The best way to find yourself is to lose yourself in the service of others.”</span>
@@ -30,7 +30,7 @@ export const Footer = () => {
                     </div>
 
                 </div>
-                <div className='col-4'>
+                <div className='col-12 col-md-4 mb-2'>
                     <div className='d-flex flex-column gap-3'>
                         <span className='f24'>Working Hours</span>
                         <span>Monday-Friday:

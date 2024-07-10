@@ -23,7 +23,7 @@ export const Contact = () => {
             </div>
             <div className='container cardsContainer'>
                 <div className='row'>
-                    <div className='col-6 card dark-bg text-center p-4 rounded-20'>
+                    <div className='col-12 col-md-6 card dark-bg text-center p-4 rounded-20'>
                         <div className='d-flex flex-column gap-3'>
                             <span className='p-color f50'>Contact Imformation</span>
                             <div className='gap-2 d-flex flex-column'>
@@ -36,8 +36,8 @@ export const Contact = () => {
 
 
                     </div>
-                    <div className='col-6 '>
-                        <div className='card dark-bg h-100 text-center p-4 rounded-20'>
+                    <div className='col-md-6 col-12 mt-3 mt-md-0'>
+                        <div className='card dark-bg w-100 h-100 text-center p-4 rounded-20'>
                             <div class="mapouter">
                                 <div class="gmap_canvas">
                                     <iframe width="690" height="560" id="gmap_canvas" src="https://maps.google.com/maps?q=township%2C+lahore&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>

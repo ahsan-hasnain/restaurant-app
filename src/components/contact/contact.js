@@ -5,7 +5,7 @@ export const Contact = () => {
     return (
         <div className='container'>
             <div className='row align-items-center'>
-                <div className='col-6'>
+                <div className='col-12 col-md-6 text-center text-md-start'>
                     <div className='d-flex flex-column gap-4'>
                         <div>
                             <span className='f60 p-color'>Contact Us</span>
@@ -27,7 +27,7 @@ export const Contact = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-6'>
+                <div className='col-6 d-none d-md-block'>
                     <div>
                         <img src={img} className='img-fluid p-5' />
                     </div>

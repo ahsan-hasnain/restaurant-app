@@ -6,16 +6,16 @@ export const HeroSection = () => {
   return (
     <div className={`container my-5 `}>
         <div className={`row  align-items-center`}>
-            <div className='col-6'>
-                    <div className={` ${styles.wrapper2} d-flex flex-column gap-5 pe-5 `}>
-                            <span className='f26'>Chase the new Flavour</span>
-                            <h1 className='f80 YouText-600 text-white p-color'>" THE KEY TO FINE DINING "</h1>
+            <div className='col-12 col-md-6 my-4 text-center text-md-start'>
+                    <div className={` ${styles.wrapper2} container w-100 d-flex flex-column gap-5 pe-5 `}>
+                            <span className='f24'>Chase the new Flavour</span>
+                            <span className='f40 YourText-600 text-white p-color'>" THE KEY TO FINE DINING "</span>
                             <span className='f18 grey'>Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet tellus </span>
                             <button className='primary-button w-[20px]' >Explore Menu</button>
                     </div>
             </div>
-            <div className='col-6'>
-                <img src={pic} className={` ${styles.wrapper} img-fluid align-items-center`}/>
+            <div className='col-6 d-none d-md-block'>
+                <img src={pic} className={` ${styles.wrapper}  h-100 w-75 align-items-center`}/>
 
             </div>
 
